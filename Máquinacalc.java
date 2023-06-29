@@ -6,6 +6,7 @@ package calculadora;
 
 import javax.swing.JOptionPane;
 
+// Aqui vocês pode visualisar a minha classe Maquinacalc, onde eu criei as variáveis necessária para a realização das operações.
 
 public class Máquinacalc {
       float n1;
@@ -13,12 +14,17 @@ public class Máquinacalc {
       float resultado;
       
     public void menu_fechar(){
-      
+// Este método tem a finalidade de encerrar a calculadora. Ele é iniciado na classe principal quando o usuário escolhe a opção zero(0).
+     
       JOptionPane.showMessageDialog(null, "A Calculadora foi encerrada!");  
         
     }
             
     public void somar(){
+//Observe que nos métodos eu precisei converter as variáveis n1 e n2 em inteiros.
+//a conversão foi necessária, pois as variáveis foram declaradas como float.
+//a conversão foi necessária, pois ao escolher uma opção o usuário digitará um número inteiro.
+
        n1=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o primeiro número: " ));
        n2=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o segundo número: " ));
             
@@ -62,5 +68,6 @@ public class Máquinacalc {
         JOptionPane.showMessageDialog(null, "O Quadrado de " + n1 + " é " + resultado);
 
     }
-    
+
+      //Gosto de utilizar o JOptionPane, pois possibilita maior interação com o usuário.
 }
