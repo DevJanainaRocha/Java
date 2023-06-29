@@ -9,6 +9,10 @@ package calculadora;
  * @author janai
  */
 
+// Aqui vocês estão visualizando a minha classe principal. 
+// Nela eu criei o objeto da classe Maquinacalc e chamei os métodos atraves do comando Switch - case.   
+// O while, no final do codigo, determina que a calculadora se mantem aberta enquanto o usuário não encerra-la escolhendo a opçã zero(0)
+
 import javax.swing.JOptionPane;
 
 public class Calculadora {
