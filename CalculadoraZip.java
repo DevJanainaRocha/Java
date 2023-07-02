@@ -3,13 +3,17 @@ package calculadorazip;
 import java.util.Scanner;
 
 public class CalculadoraZip {
+    // Esta calculadora e não utilizei métodos. fiz direto no main.
+    // Utilizei o System.out para interação que tem um procedimento diferendo do JOption.pane.
 
     @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
-
+      
         double num1, num2;
         double soma, subtracao, divisao, multiplicacao, quadrado, sair;
         Scanner entrada = new Scanner(System.in);
+         // Ao utilizar o System.out é necessário importa o java.util.Scanner para que a máquina leia o que for digitado pelo usuário.
+        // por esta razão, é feito o objeto de entrada do Scanner.
         int opcao;
         opcao = 1;
 
@@ -23,7 +27,8 @@ public class CalculadoraZip {
             System.out.println("0 - SAIR");
             System.out.println("Digite a opção desejada ");
             opcao = entrada.nextInt();
-            
+            // Observe que qua a váriavel opçãp foi declarada como inteiro.
+            // por esta razão o entrada.nextInt para que a leitura seja feita corretamente.
              
           
             switch (opcao) {
